@@ -19,7 +19,7 @@ body {
     gap: 40px;
 }
 .box-1{
-   flex-grow: 1;
+  flex-basis:100px;
 }
 .box-2{
     flex-grow: 5;
