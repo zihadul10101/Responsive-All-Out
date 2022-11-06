@@ -15,6 +15,7 @@ body {
     height:100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
     gap: 40px;
 }
