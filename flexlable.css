@@ -21,3 +21,27 @@ body {
     min-height:100vh;
     font-size: 45px;
 }
+.container {
+    display: flex;
+    gap: 4vh;
+    flex-direction: column;
+    padding:4vh;
+    border:3px solid #48CAE4;
+}
+[class^="block-"]{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh /3);
+    gap: 4vh;
+}
+[class^="box-"]{
+    background-color:#c1c1c1 ;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* flex-grow: 1; */
+    flex-basis: calc(100%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
