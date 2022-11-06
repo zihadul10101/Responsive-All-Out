@@ -16,6 +16,18 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
     gap: 40px;
+}
+.box-1{
+    align-self: start;
+}
+.box-2{
+    align-self: center;
+
+}
+.box-3{
+    align-self: end;
+}
+.box-4{
+
 }
