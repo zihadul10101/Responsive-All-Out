@@ -39,6 +39,11 @@ align-items: center;
 .block-2{
     flex-grow: 7;
 }
-@media (max-width: 768px){
-  
+@media (max-width: 480px){
+    .container {
+        flex-direction: column;  
+    }
+    [class^="block-"]{
+        height: calc(50vh - 4vh - 4vh);   
+    }
 }
