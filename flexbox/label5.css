@@ -57,4 +57,15 @@ gap:4vh;
     flex-basis: 20%;
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .bolck-2{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .box-2{
+        display: none;
+    }
+    .box-3{
+        flex-basis: 80%;
+    }
+}
