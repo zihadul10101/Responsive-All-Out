@@ -58,3 +58,15 @@ body {
 .box-3 {
     flex-grow: 3;
 }
+
+@media (max-width: 480px) {
+
+    .block-2 {
+        flex-direction: column;
+    }
+
+    .box-3,
+    .box-4 {
+        flex-grow: 1;
+    }
+}
