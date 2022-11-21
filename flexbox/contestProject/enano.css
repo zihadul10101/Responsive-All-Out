@@ -44,7 +44,8 @@ body {
 .box-6,.box-7,
 .box-8,.box-9,
 .box-20,.box-21,
-.box-23,.box-24
+.box-23,.box-24,
+.box-a,.box-b
 {
     flex-basis: 50%;
     height: 20vh;
@@ -63,6 +64,7 @@ body {
 }
 
 @media (max-width: 480px) {
+    .bolck-0,
     .bolck-2,
     .bolck-3,
     .bolck-4,
@@ -71,14 +73,50 @@ body {
     .bolck-8,
     .bolck-9,
     .bolck-11
-    
     {
-        flex-direction: column;
-        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+     flex-direction: column;
     }
+
+    
    
 }
 @media (max-width: 768px) {
+ /* 3 box can 2 box */
+    .box-3,.box-4,.box-5,
+    .box-10,.box-11,.box-12,
+    .box-13,.box-14,.box-15,
+    .box-17,.box-18,.box-19
+    {
+        flex-basis: 48%;
+        height: calc(27vh - 4vh - 4vh);
+    }
+    .bolck-2,.bolck-5,
+    .bolck-6,.bolck-8
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* 2 box can 1 box */
+    .bolck-0,
+    .bolck-3,
+    .bolck-4,
+    .bolck-9,
+    .bolck-11
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box-a,.box-b,.box-6,
+    .box-7,.box-8,.box-9,
+    .box-20,.box-21,.box-23,
+    .box-24
+    {
+        flex-basis: 100%;
+        height: calc(27vh - 4vh - 4vh);   
+    }
 
 }
 
