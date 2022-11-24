@@ -66,6 +66,16 @@ body {
 
   height: 15px;
  }
+ .navbar ul .get-started{
+    padding: 10px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    line-height: 1;
+    color: #5f687b;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #cdd1d9;
+ }
  .dropdown-content {
     display: none;
     position: absolute;
@@ -110,6 +120,73 @@ body {
   .dropdown-toggle-content a:hover {background-color: #ddd;}
    .dropdown-toggle:hover .dropdown-toggle-content {display: block;}
  /* header end */
+/* hero section start */
+.hero{
+    display: flex;
+    flex-direction: row;  
+}
+.hero-content{
+    flex-basis: 50%;
+    border:2px solid red;
+    justify-content: start;
+    align-items: start;
+}
+.inner-contant{
+    margin-top: 8%;
+}
+.hero-content h1{
+    font-weight: 700;
+    line-height: 56px;
+    color: #3e4450;
+}
+.hero-content h2{
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    color: #858ea1;
+}
+.hero-image {
+    flex-basis: 50%;
+    border:2px solid rgb(20, 128, 161);
+    height: 400px;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+}
+.hero-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3vh;
+    cursor: pointer;
+}
+.hero-btn .hero-btn-gt{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #16df7e;
+    box-shadow: 0 8px 28px rgb(22 223 126 / 45%);
+}
+.hero-video{
+    display: flex;
+    gap: 1vh;
+    font-size: 16px;
+    transition: 0.5s;
+    color: #5f687b;
+    align-items: center;
+    justify-content: center;
+}
+.hero-video img{
+    height: 25px;
+}
+/* hero section end */
+
 [class^="bolck-"] {
     display: flex;
     flex-direction: row;
@@ -128,8 +205,8 @@ body {
 .box-6,.box-7,
 .box-8,.box-9,
 .box-20,.box-21,
-.box-23,.box-24,
-.box-a,.box-b
+.box-23,.box-24
+
 {
     flex-basis: 50%;
     
@@ -154,7 +231,7 @@ body {
         padding-right: 2vh;
       
     }
-    .bolck-0,
+    .hero,
     .bolck-2,
     .bolck-3,
     .bolck-4,
@@ -194,6 +271,14 @@ body {
         font-size:35px;
      }
     /* header end */
+    /* hero section start */
+     /* 2 box can 1 box */
+.hero{
+    flex-direction: column-reverse; 
+    gap: 2vh;
+}
+
+    /* hero section end */
  /* 3 box can 2 box */
     .box-3,.box-4,.box-5,
     .box-10,.box-11,.box-12,
@@ -210,7 +295,7 @@ body {
         flex-wrap: wrap;
     }
     /* 2 box can 1 box */
-    .bolck-0,
+    .hero,
     .bolck-3,
     .bolck-4,
     .bolck-9,
@@ -220,7 +305,7 @@ body {
         flex-wrap: wrap;
     }
 
-    .box-a,.box-b,.box-6,
+    .box-6,
     .box-7,.box-8,.box-9,
     .box-20,.box-21,.box-23,
     .box-24
