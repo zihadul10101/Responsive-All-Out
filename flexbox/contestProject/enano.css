@@ -19,7 +19,7 @@ body {
     font-family: sans-serif;
     width: 100%;
     min-height: 100vh;
-    font-size: 45px;
+    font-size: 25px;
 }
 .container {
     display: flex;
@@ -29,6 +29,30 @@ body {
     padding-right: 10vh;
     border:2px solid red;
 }
+ /* header start */
+ .header{
+    display: flex;
+    flex-direction: row;  
+  
+ }
+ .logo{
+    border:2px solid black;
+    flex-grow: 1;
+
+ }
+ .navbar{
+    border:2px solid green;
+    flex-grow: 1;
+ }
+ .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+ }
+ .navbar img{
+    display: none;
+ }
+ /* header end */
 [class^="bolck-"] {
     display: flex;
     flex-direction: row;
@@ -43,7 +67,7 @@ body {
     border: 2px solid #48CAE4;
     border-radius: 10px;
 }
-.bolck-0,.box-1,.box-2,
+
 .box-6,.box-7,
 .box-8,.box-9,
 .box-20,.box-21,
@@ -90,11 +114,29 @@ body {
     
    
 }
+
 @media (max-width: 768px) {
     .container {
         padding-left: 2vh;
         padding-right: 2vh; 
     }
+
+    /* header start */
+    .navbar ul{
+        display: none;  
+    }
+    .navbar img{
+        display: block;
+        height: 40px; 
+    }
+    .navbar{
+        border:2px solid red;
+     }
+     .logo{
+        text-align: center;
+        font-size:35px;
+     }
+    /* header end */
  /* 3 box can 2 box */
     .box-3,.box-4,.box-5,
     .box-10,.box-11,.box-12,
