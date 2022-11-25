@@ -19,7 +19,7 @@ body {
     font-family: "Raleway", sans-serif;
     width: 100%;
     min-height: 100vh;
-    font-size: 25px;
+  
 }
 
 .container {
@@ -196,7 +196,7 @@ body {
 
 .hero-image {
     flex-basis: 50%;
-    height: 400px;
+    height: 450px;
 }
 
 .hero-image img {
@@ -337,7 +337,7 @@ body {
  .about-image{
     border: 2px solid #48CAE4;
     flex-basis: 50%;
-    height: 400px;
+    /* height: 400px; */
 }
 .about-image img {
     width: 100%;
@@ -345,7 +345,33 @@ body {
 }
  .about-content{
     border: 2px solid #48CAE4;
-   flex-grow: 1;
+    flex-basis: 50%;
+ }
+ .about-content ul {
+    list-style: none;
+ 
+ }
+ .about-content ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+ .about-content ul img {
+   width: 40px;
+ }
+ .about-content h3{
+    font-weight: 700;
+    font-size: 32px;
+    color: #5f687b;
+    margin-bottom: 1rem;
+ }
+ .about-content p{
+    font-style: italic;
+    color: #5f687b;
+    transition: 0.3s;
+    font-size: 20px;
+    margin: 15px;
  }
  /* about section end */
 [class^="bolck-"] {
