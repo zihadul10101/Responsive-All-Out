@@ -332,10 +332,10 @@ body {
  .about{
     display: flex;
     flex-direction: row;
-    border: 2px solid rgb(0, 255, 174); 
+  
  }
  .about-image{
-    border: 2px solid #48CAE4;
+   
     flex-basis: 50%;
     /* height: 400px; */
 }
@@ -344,7 +344,7 @@ body {
     height: 100%;
 }
  .about-content{
-    border: 2px solid #48CAE4;
+   
     flex-basis: 50%;
  }
  .about-content ul {
@@ -374,6 +374,36 @@ body {
     margin: 15px;
  }
  /* about section end */
+ /* counters section start */
+ .counters{
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+ }
+
+ .counters-box{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+ }
+ .counters-box span{
+    font-size: 48px;
+    display: block;
+    color: #16df7e;
+    font-weight: 700;
+   
+ }
+ .counters-box p{
+    padding: 0;
+    margin: 0 0 25px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+ }
+ /* counters section end */
 [class^="bolck-"] {
     display: flex;
     flex-direction: row;
@@ -391,8 +421,7 @@ body {
 }
 
 
-.box-8,
-.box-9,
+
 .box-20,
 .box-21,
 .box-23,
@@ -431,7 +460,7 @@ body {
     .hero,
     .featured-services,
     .about,
-    .bolck-4,
+    .counters,
     .bolck-5,
     .bolck-6,
     .bolck-8,
@@ -495,7 +524,11 @@ body {
         flex-direction: column;
         gap: 2vh;
     }
-    /* about section end */
+    /* counter section start */
+    .counters-box{
+        flex-basis: 46%;
+    }
+    /* counter section end */
     /* 3 box can 2 box */
    
     .box-10,
@@ -522,7 +555,7 @@ body {
     /* 2 box can 1 box */
     .hero,
     .bolck-3,
-    .bolck-4,
+    .counters,
     .bolck-9,
     .bolck-11 {
         display: flex;
@@ -531,8 +564,7 @@ body {
 
     .box-6,
     .box-7,
-    .box-8,
-    .box-9,
+
     .box-20,
     .box-21,
     .box-23,
