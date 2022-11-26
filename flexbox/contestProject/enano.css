@@ -179,7 +179,7 @@ body {
 }
 
 .inner-contant {
-    margin-top: 8%;
+    margin-top: 15%;
 }
 
 .hero-content h1 {
@@ -259,7 +259,7 @@ body {
 
 }
 
-.services-1 {
+.featured-box {
     flex-grow: 1;
     padding: 20px;
     color: #5f687b;
@@ -270,48 +270,16 @@ body {
     height: 100%;
 }
 
-.services-1 img {}
-
-.services-2 {
-    flex-grow: 1;
-    padding: 20px;
-    color: #5f687b;
-    background: #f9f9fa;
-    border-radius: 4px;
-    border: 1px solid #f9f9fa;
-    transition: 0.3s;
-    height: 100%;
+.featured-box img {
+    height: 50px;
 }
 
-.services-3 {
-    flex-grow: 1;
-    padding: 20px;
-    color: #5f687b;
-    background: #f9f9fa;
-    border-radius: 4px;
-    border: 1px solid #f9f9fa;
-    transition: 0.3s;
-    height: 100%;
-}
-
-.services-1 h4 {
+.featured-box h4 {
     color: #5f687b;
     transition: 0.3s;
 }
 
-.services-2 h4 {
-    color: #5f687b;
-    transition: 0.3s;
-}
-
-.services-3 h4 {
-    color: #5f687b;
-    transition: 0.3s;
-
-
-}
-
-.services-1 p {
+.featured-box p {
     color: #5f687b;
     transition: 0.3s;
     line-height: 24px;
@@ -319,21 +287,7 @@ body {
     margin-top: 5px;
 }
 
-.services-2 p {
-    color: #5f687b;
-    transition: 0.3s;
-    line-height: 24px;
-    font-size: 14px;
-    margin-top: 5px;
-}
 
-.services-3 p {
-    color: #5f687b;
-    transition: 0.3s;
-    line-height: 24px;
-    font-size: 14px;
-    margin-top: 5px;
-}
 
 /* featured-services section end */
 /* about section start */
@@ -428,10 +382,9 @@ body {
 .services {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 2vh;
-    border: 2px solid rgb(0, 255, 174);
 }
 
 .services-box {
@@ -447,7 +400,137 @@ body {
     background: #fff;
 }
 
+.services-box img {
+    height: 46px;
+}
+
+.services-box h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 /* services section end */
+/* testimonial section start */
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+  
+}
+
+.testimonial-box {
+
+    flex-basis: 33%;
+    position: relative;
+    box-sizing: content-box;
+    min-height: 320px;
+}
+.quote-icon-left{
+    position: absolute;
+    left:10px;
+    top: -15px;
+    height: 35px;
+    z-index: 3;
+}
+.quote-icon-right{
+    position: absolute;
+    z-index: 3;
+    top: 110px;
+    right: 290px;
+    height: 35px;
+}
+.profile img {
+    width: 90px;
+    border-radius: 50%;
+    margin: -40px 0 0 40px;
+    position: relative;
+    z-index: 2;
+    border: 6px solid #fff;
+}
+
+.testimonial-box p {
+    font-style: italic;
+    margin: 0 15px 0 15px;
+    padding: 20px 20px 60px 20px;
+    background: white;
+    position: relative;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+   
+}
+
+.profile h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 45px;
+    color: #111;
+}
+
+.profile h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0 0 0 45px;
+}
+
+/* testimonial section end */
+/* team section start */
+.team {
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+    border: 2px solid rgb(0, 255, 174);
+}
+
+.team-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1c1c1;
+    border: 2px solid #48CAE4;
+    border-radius: 10px;
+    flex-basis: 33%;
+}
+
+/* team section end */
+/* contact section start */
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+    border: 2px solid rgb(0, 255, 174);
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1c1c1;
+    border: 2px solid #48CAE4;
+    border-radius: 10px;
+    flex-basis: 50%;
+}
+
+/* team section end */
+/* .footer section start */
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+    border: 2px solid rgb(0, 255, 174);
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1c1c1;
+    border: 2px solid #48CAE4;
+    border-radius: 10px;
+    flex-basis: 50%;
+}
+
+/* .footer section end */
 [class^="bolck-"] {
     display: flex;
     flex-direction: row;
@@ -467,164 +550,8 @@ body {
 
 
 
-.box-20,
-.box-21,
-.box-23,
-.box-24 {
-    flex-basis: 50%;
-
-}
-
-.box-13,
-.box-14,
-.box-15,
-.box-17,
-.box-18,
-.box-19 {
-    flex-basis: 33%;
-}
 
 .box-16,
 .box-22 {
     flex-basis: 100%;
-
-}
-
-@media (max-width: 480px) {
-    .container {
-
-        padding-left: 2vh;
-        padding-right: 2vh;
-
-    }
-
-    .hero,
-    .featured-services,
-    .about,
-    .counters,
-    .services,
-    .bolck-6,
-    .bolck-8,
-    .bolck-9,
-    .bolck-11 {
-
-        flex-direction: column;
-    }
-
-
-
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding-left: 2vh;
-        padding-right: 2vh;
-    }
-
-    /* header start */
-    .navbar ul {
-        display: none;
-    }
-
-    .navbar .nav-img {
-        display: block;
-        height: 40px;
-    }
-
-    .navbar {
-        border: 2px solid red;
-    }
-
-    .logo {
-        text-align: center;
-        font-size: 35px;
-    }
-
-    /* header end */
-    /* hero section start */
-    /* 2 box can 1 box */
-    .hero {
-        flex-direction: column-reverse;
-        gap: 2vh;
-    }
-
-    /* hero section end */
-    /* featured-services section start */
-    .services-1,
-    .services-2,
-    .services-3 {
-        flex-basis: 45%;
-    }
-
-    .featured-services {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* featured-services section end */
-    /* about section start */
-    .about {
-        flex-direction: column;
-        gap: 2vh;
-    }
-
-    /* counter section start */
-    .counters-box {
-        flex-basis: 46%;
-    }
-
-    /* counter section end */
-    /* services section start */
-    .services {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .services-box {
-        flex-basis: 45%;
-    }
-
-    /* services section end */
-    /* 3 box can 2 box */
-
-
-    .box-13,
-    .box-14,
-    .box-15,
-    .box-17,
-    .box-18,
-    .box-19 {
-        flex-basis: 45%;
-
-    }
-
-
-
-    .bolck-6,
-    .bolck-8 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* 2 box can 1 box */
-    .hero,
-    .bolck-3,
-    .counters,
-    .bolck-9,
-    .bolck-11 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .box-6,
-    .box-7,
-
-    .box-20,
-    .box-21,
-    .box-23,
-    .box-24 {
-        flex-basis: 100%;
-
-    }
-
 }

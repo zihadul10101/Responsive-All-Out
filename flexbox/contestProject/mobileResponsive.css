@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+    .container {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .hero,
+    .featured-services,
+    .about,
+    .counters,
+    .services,
+    .testimonial,
+    .team,
+    .contact,
+    .footer{
+
+        flex-direction: column;
+    }
+}
