@@ -415,7 +415,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 4vh;
-  
+
 }
 
 .testimonial-box {
@@ -425,20 +425,23 @@ body {
     box-sizing: content-box;
     min-height: 320px;
 }
-.quote-icon-left{
+
+.quote-icon-left {
     position: absolute;
-    left:10px;
+    left: 10px;
     top: -15px;
     height: 35px;
     z-index: 3;
 }
-.quote-icon-right{
+
+.quote-icon-right {
     position: absolute;
     z-index: 3;
     top: 110px;
     right: 290px;
     height: 35px;
 }
+
 .profile img {
     width: 90px;
     border-radius: 50%;
@@ -457,7 +460,7 @@ body {
     border-radius: 6px;
     position: relative;
     z-index: 1;
-   
+
 }
 
 .profile h3 {
@@ -474,22 +477,111 @@ body {
 }
 
 /* testimonial section end */
+/* call to action section start */
+.cta {
+    background: #16df7e;
+    background-size: cover;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+
+}
+
+.cta-box {
+    flex-basis: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cta-box h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cta-box p {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.cta-box .cta-btn {
+
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cta-box .cta-btn:hover {
+    background: #206bfb;
+    border-color: #206bfb;
+    cursor: pointer;
+}
+
+
+
+/* call to action section end */
 /* team section start */
 .team {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 4vh;
-    border: 2px solid rgb(0, 255, 174);
+
+  
 }
 
 .team-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #c1c1c1;
-    border: 2px solid #48CAE4;
-    border-radius: 10px;
-    flex-basis: 33%;
+    flex-basis: 30%;
+}
+
+.team-box img {
+    max-width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.social {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    padding: 10px 20px;
+    background: #fff;
+}
+.social h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+.social span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+}
+
+.social p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #aaaaaa;
 }
 
 /* team section end */
@@ -539,6 +631,7 @@ body {
 
 }
 
+
 [class^="box-"] {
     display: flex;
     justify-content: center;
@@ -551,7 +644,7 @@ body {
 
 
 
-.box-16,
+
 .box-22 {
     flex-basis: 100%;
 }
