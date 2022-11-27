@@ -14,10 +14,10 @@
 <body>
     <div class="container">
         <!-- header section start -->
-        <div class="header" id="myHeader">
+        <div class="header"  id="myHeader">
             <div class="logo">eNno</div>
-            <div class="navbar">
-                <img class="nav-img" src="./img/header/menu.png" alt="Placeholder" />
+            <div class="navbar" id="myTopnav">
+                <img  onclick="headerRes()" class="nav-img" src="./img/header/menu.png" alt="Placeholder" />
                 <ul>
                     <li>Home</li>
                     <li>About</li>
@@ -54,7 +54,7 @@
                         </div>
                     </li>
                     <li>Contact</li>
-                    <li class="get-started">
+                    <li onclick="darkLightMode()" class="get-started">
                         Get Started
                     </li>
                 </ul>
@@ -468,9 +468,7 @@
         </div>
     </section>
     <!-- contact section end-->
-
-    <!-- team section end-->
-
+    <!-- eno-Subscribe section start-->
 
     <section class="eno-Subscribe">
         <div class="eno-Subscribe-box">
@@ -501,6 +499,7 @@
             </div>
         </div>
     </section>
+    <!-- eno-Subscribe section end-->
     <!-- footer section start-->
     <div class="footer">
         <div class="footer-box">
@@ -551,16 +550,33 @@
 
         window.onscroll = function () { mySticky() };
 
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
+        var headerResponsive = document.getElementById("myHeader");
+        var sticky = headerResponsive.offsetTop;
 
         function mySticky() {
             if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
+                headerResponsive.classList.add("sticky");
             } else {
-                header.classList.remove("sticky");
+                headerResponsive.classList.remove("sticky");
             }
         }
+
+        // dark or light mode
+        function darkLightMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        // header responsive
+        function headerRes() {
+            var x = document.getElementById("myTopnav");
+            console.log(x);
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        } 
     </script>
 </body>
 
