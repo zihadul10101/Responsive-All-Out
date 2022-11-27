@@ -1,7 +1,7 @@
 @media (max-width: 480px) {
     .container {
-        padding-left: 2vh;
-        padding-right: 2vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
     }
     .hero,
     .featured-services,
