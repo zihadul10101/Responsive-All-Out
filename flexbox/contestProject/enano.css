@@ -32,10 +32,15 @@ body {
 }
 
 /* header start */
+.sticky {
+    position: fixed;
+    top: 0;
+    min-width: 90%;
+  }
 .header {
     display: flex;
     flex-direction: row;
-    position: static;
+   
 }
 
 .logo {
@@ -672,13 +677,15 @@ section {
     flex-basis: 48%;
     border-top: 3px solid #16df7e;
     border-bottom: 3px solid #16df7e;
-    padding: 30px;
+    padding: 20px;
     background-color: #f9f9fa;
+   
 }
 
 
 .contact-info {
     width: 100%;
+    
 }
 
 .info {
@@ -689,6 +696,7 @@ section {
     gap: 3vh;
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 .info-contant h4 {
@@ -729,8 +737,9 @@ section {
 }
 
 .map {
-    min-height: 500px;
+    
     min-width: 100%;
+   
 
 }
 
@@ -754,6 +763,8 @@ section {
 label {
     font-size: 20px;
     color: #949cac;
+    font-family: "Open Sans", sans-serif;
+    
 }
 
 input {
