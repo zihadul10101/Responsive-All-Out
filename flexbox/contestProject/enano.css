@@ -379,11 +379,57 @@ body {
 
 /* counters section end */
 /* services section start */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  .section-bg {
+    background-color: #f9f9fa;
+  }
+.section-title{
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #5f687b;
+    position: relative;
+    z-index: 2;
+  }
+  .section-title span {
+    position: absolute;
+    top: 30px;
+    color: #f0f1f3;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+  .section-title p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
 .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+.section-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 2vh;
 }
 
@@ -414,14 +460,16 @@ body {
 /* testimonial section start */
 .testimonial {
     display: flex;
-    flex-direction: row;
-    gap: 4vh;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2vh;
 
 }
 
 .testimonial-box {
 
-    flex-basis: 33%;
+    flex-basis: 30%;
     position: relative;
     box-sizing: content-box;
     min-height: 320px;
@@ -496,6 +544,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  
 }
 
 .cta-box h3 {
@@ -509,6 +558,8 @@ body {
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
+    width: 90%;
+    padding: 5px;
 }
 
 .cta-box .cta-btn {
@@ -542,10 +593,10 @@ body {
 /* team section start */
 .team {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 4vh;
+    gap: 2vh;
 }
 
 .team-box {
@@ -604,9 +655,13 @@ body {
 
 /* team section end */
 /* contact section start */
+
 .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1vh;
 }
 
 .contact-box {
@@ -614,7 +669,7 @@ body {
     justify-content: start;
     flex-direction: column;
     align-items: center;
-    flex-basis: 50%;
+    flex-basis: 48%;
     border-top: 3px solid #16df7e;
     border-bottom: 3px solid #16df7e;
     padding: 30px;
