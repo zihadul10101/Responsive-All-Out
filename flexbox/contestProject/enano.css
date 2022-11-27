@@ -919,7 +919,7 @@ input:focus {
     outline: none;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 5px;
     border-radius: 4px;
 }
 
@@ -949,7 +949,7 @@ input:focus {
 }
 
 /* .footer section end */
-[class^="bolck-"] {
+/* [class^="bolck-"] {
     display: flex;
     flex-direction: row;
     gap: 4vh;
@@ -964,12 +964,9 @@ input:focus {
     background-color: #c1c1c1;
     border: 2px solid #48CAE4;
     border-radius: 10px;
-}
+} */
 
 
 
 
 
-.box-22 {
-    flex-basis: 100%;
-}
