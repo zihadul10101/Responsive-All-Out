@@ -22,10 +22,7 @@ body {
     color: black;
     background-color: white;
 }
-.dark-mode {
-    background-color: black;
-    color: white;
-  }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -52,6 +49,7 @@ body {
     font-size: 40px;
     flex-grow: 1;
     padding-top: 10px;
+    color: #16df7e;
 }
 
 .navbar {
@@ -495,8 +493,8 @@ section {
 .quote-icon-right {
     position: absolute;
     z-index: 3;
-    top: 110px;
-    right: 290px;
+    top: 105px;
+    right: 207px;
     height: 35px;
 }
 
